@@ -77,7 +77,6 @@ PARAM$bo_lgb <- makeParamSet(
   makeIntegerParam("max_depht", lower = 5L, upper = 14L),
   makeNumericParam("bagging_fraction", lower = 0.0, upper = 1.0),
   makeIntegerParam("max_bin", lower = 20L, upper = 35L),
-  makeNumericParam("learning_rate", lower = 0.0, upper = 0.8),
   makeIntegerParam("num_iterations", lower = 500, upper = 9999)
 )
 
