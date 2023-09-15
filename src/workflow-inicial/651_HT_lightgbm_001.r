@@ -51,6 +51,7 @@ PARAM$lgb_basicos <- list(
   min_sum_hessian_in_leaf = 0.001, #  min_sum_hessian_in_leaf >= 0.0
   lambda_l1 = 1.0, # lambda_l1 >= 0.0
   lambda_l2 = 1.0, # lambda_l2 >= 0.0
+  max_bin = 31L,
 
   pos_bagging_fraction = 0.8, # 0.0 < pos_bagging_fraction <= 1.0
   neg_bagging_fraction = 0.4, # 0.0 < neg_bagging_fraction <= 1.0
@@ -76,7 +77,6 @@ PARAM$bo_lgb <- makeParamSet(
   makeIntegerParam("min_data_in_leaf", lower = 100L, upper = 50000L),
   makeIntegerParam("max_depht", lower = 5L, upper = 14L),
   makeNumericParam("bagging_fraction", lower = 0.0, upper = 1.0),
-  makeIntegerParam("max_bin", lower = 20L, upper = 35L),
   makeIntegerParam("num_iterations", lower = 500, upper = 9999)
 )
 
